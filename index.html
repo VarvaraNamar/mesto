@@ -38,8 +38,8 @@
           <article class="element">
             <img class="element__image" src="./images/kamchatka.jpg" alt="Камчатка">
             <div class="element__description">
-              <h2 class="element__title">Камчатка ggjhgfsdsdsds</h2>
-              <button class="element__button">
+              <h2 class="element__title">Камчатка</h2>
+              <button class="element__like-button">
                 <span class="sr-only">Поставить лайк</span>
               </button>
             </div>
@@ -50,7 +50,7 @@
             <img class="element__image" src="./images/krim.jpg" alt="Крым">
             <div class="element__description">
               <h2 class="element__title">Крым</h2>
-              <button class="element__button">
+              <button class="element__like-button">
                 <span class="sr-only">Поставить лайк</span>
               </button>
             </div>
@@ -61,7 +61,7 @@
             <img class="element__image" src="./images/teriberka.jpg" alt="Териберка">
             <div class="element__description">
               <h2 class="element__title">Териберка</h2>
-              <button class="element__button">
+              <button class="element__like-button">
                 <span class="sr-only">Поставить лайк</span>
               </button>
             </div>
@@ -72,7 +72,7 @@
             <img class="element__image" src="./images/baikal.jpg" alt="Байкал">
             <div class="element__description">
               <h2 class="element__title">Байкал</h2>
-              <button class="element__button">
+              <button class="element__like-button">
                 <span class="sr-only">Поставить лайк</span>
               </button>
             </div>
@@ -83,7 +83,7 @@
             <img class="element__image" src="./images/altai.jpg" alt="Алтай">
             <div class="element__description">
               <h2 class="element__title">Алтай</h2>
-              <button class="element__button">
+              <button class="element__like-button">
                 <span class="sr-only">Поставить лайк</span>
               </button>
             </div>
@@ -94,18 +94,30 @@
             <img class="element__image" src="./images/sochi.jpg" alt="Сочи">
             <div class="element__description">
               <h2 class="element__title">Сочи</h2>
-              <button class="element__button">
+              <button class="element__like-button">
                 <span class="sr-only">Поставить лайк</span>
               </button>
             </div>
           </article>
         </li>
       </ul>
-
     </section>
   </main>
   <footer class="footer">
     <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
   </footer>
+
+  <div class="popup">
+    <form class="popup__container">
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <input class="popup__name" type="text" name="name" placeholder="Имя"/>
+      <input class="popup__caption"type="text" name="occupation" placeholder="О себе"/>
+      <button class="popup__save-button">Сохранить</button>
+      <button class="popup__close-button">
+        <span class="sr-only">Закрыть</span>
+      </button>
+    </form>
+  </div>
+
 </body>
 </html>
