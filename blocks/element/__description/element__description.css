@@ -1,0 +1,6 @@
+.element__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 21px 0 31px;
+}
