@@ -18,8 +18,13 @@ editPopupCloseButton.addEventListener('click', function() {
 });
 
 popupSubmit.addEventListener('click', function() {
-  closePopup(editPopup);
+  submit(editPopup);
 });
+
+function render() {
+  nameInput.value = userName.textContent;
+  jobInput.value = userOccupation.textContent;
+};
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
@@ -31,11 +36,9 @@ function closePopup(popup) {
   render();
 };
 
-function render() {
-  nameInput.value = userName.textContent;
-  jobInput.value = userOccupation.textContent;
-};
-
+function submit(popup) {
+  popup.classList.remove('popup_opened');
+}
 
 function handleFormSubmit (evt) {
     evt.preventDefault(); 
