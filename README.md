@@ -1,7 +1,7 @@
 # Проект: Место
 Проектная работа 4 спринта
 
-[Ссылка на рпоект на GitHub Pages](https://varvaranamar.github.io/mesto/index.html)
+[Ссылка на проект на GitHub Pages](https://varvaranamar.github.io/mesto/index.html)
 
 ## **Описание**
 
@@ -20,8 +20,6 @@
 7. Адаптивная верстка
 8. Java Script
 
-<<<<<<< HEAD
-=======
 ## **Описание**
 
 Адаптивный сайт с возможностью добавления информации о пользователе и фотографий.
@@ -39,7 +37,7 @@
 7. Адаптивная верстка
 8. Java Script
 
->>>>>>> 5b63ce431aa237b6e826f8e38a04d59c8f23b490
+>>>>>>> ba5f2c4e3af5cee68aafd18bcd3736778075ae66
 **Figma**
 
 [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
