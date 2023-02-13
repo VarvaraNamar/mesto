@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 680px) {
-  .profile__info{
+  .profile__info {
     padding: 26px 0 32px;
     align-items: center;
     max-width: 282px;

@@ -7,7 +7,7 @@
   background-color: #fff;
   width: 22px;
   height: 19px;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .element__like-button:hover {
