@@ -7,6 +7,7 @@
   <meta name="description" content="Интерактивная страница с фото">
   <meta name="author" content="Варвара Намар">
   <link rel="stylesheet" href="./pages/index.css">
+  <script src="./scripts/index.js" defer></script>
   <title>Место</title>
 </head>
 <body class="page">
@@ -36,6 +37,7 @@
               <h2 class="element__title">Камчатка</h2>
               <button class="element__like-button" aria-label="Поставить лайк" type="button"></button>
             </div>
+            <button class="element__delete-button" aria-label="Удалить карточку" type="button"></button>
           </article>
         </li>
         <li>
@@ -45,6 +47,7 @@
               <h2 class="element__title">Крым</h2>
               <button class="element__like-button" aria-label="Поставить лайк" type="button"></button>
             </div>
+            <button class="element__delete-button" aria-label="Удалить карточку" type="button"></button>
           </article>
         </li>
         <li>
@@ -54,6 +57,7 @@
               <h2 class="element__title">Териберка</h2>
               <button class="element__like-button" aria-label="Поставить лайк" type="button"></button>
             </div>
+            <button class="element__delete-button" aria-label="Удалить карточку" type="button"></button>
           </article>
         </li>
         <li>
@@ -63,6 +67,7 @@
               <h2 class="element__title">Байкал</h2>
               <button class="element__like-button" aria-label="Поставить лайк" type="button"></button>
             </div>
+            <button class="element__delete-button" aria-label="Удалить карточку" type="button"></button>
           </article>
         </li>
         <li>
@@ -72,6 +77,7 @@
               <h2 class="element__title">Алтай</h2>
               <button class="element__like-button" aria-label="Поставить лайк" type="button"></button>
             </div>
+            <button class="element__delete-button" aria-label="Удалить карточку" type="button"></button>
           </article>
         </li>
         <li>
@@ -81,6 +87,7 @@
               <h2 class="element__title">Сочи</h2>
               <button class="element__like-button" aria-label="Поставить лайк" type="button"></button>
             </div>
+            <button class="element__delete-button" aria-label="Удалить карточку" type="button"></button>
           </article>
         </li>
       </ul>
@@ -101,6 +108,18 @@
       </form>
     </div>
   </div>
-  <script src="./scripts/index.js"></script>
+
+  <div class="popup popup_add-card">
+    <div class="popup__container">
+      <h2 class="popup__title">Новое место</h2>
+      <button class="popup__close-button popup__close-button_add-card" aria-label="Закрыть" type="button"></button>
+      <form class="popup__form" name="card-form" novalidate>
+        <input class="popup__input popup__input_card_title" type="text" name="title" required placeholder="Название">
+        <input class="popup__input popup__input_card_link" type="text" name="link" required placeholder="Ссылка на картинку">
+        <button class="popup__save-button" type="submit">Создать</button>
+      </form>
+    </div>
+  </div>
+  
 </body>
 </html>

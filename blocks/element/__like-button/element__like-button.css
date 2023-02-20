@@ -3,8 +3,8 @@
   padding: 0;
   border: none;
   cursor: pointer;
-  background-image: url(../../../images/Like.svg);
   background-color: #fff;
+  background-image: url(../../../images/Like.svg);
   width: 22px;
   height: 19px;
   transition: opacity 0.3s ease;
