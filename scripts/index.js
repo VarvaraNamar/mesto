@@ -20,28 +20,28 @@ let titleZoom = document.querySelector('.popup__zoom-title');//описание 
 
 const initialCards = [
   {
-    name: 'Архыз',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+    name: 'Сочи',
+    link: './images/sochi.JPG'
   },
   {
-    name: 'Челябинская область',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-  },
-  {
-    name: 'Иваново',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-  },
-  {
-    name: 'Камчатка',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-  },
-  {
-    name: 'Холмогорский район',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+    name: 'Алтай',
+    link: './images/altai.JPG'
   },
   {
     name: 'Байкал',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+    link: './images/baikal.JPG'
+  },
+  {
+    name: 'Териберка',
+    link: './images/teriberka.JPG'
+  },
+  {
+    name: 'Крым',
+    link: './images/krim.JPG'
+  },
+  {
+    name: 'Камчатка',
+    link: './images/kamchatka.JPG'
   }
 ];
 
