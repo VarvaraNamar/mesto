@@ -21,27 +21,27 @@ let titleZoom = document.querySelector('.popup__zoom-title');//описание 
 const initialCards = [
   {
     name: 'Сочи',
-    link: '../images/sochi.JPG'
+    link: './images/sochi.JPG'
   },
   {
     name: 'Алтай',
-    link: '../images/altai.JPG'
+    link: './images/altai.JPG'
   },
   {
     name: 'Байкал',
-    link: '../images/baikal.JPG'
+    link: './images/baikal.JPG'
   },
   {
     name: 'Териберка',
-    link: '../images/teriberka.JPG'
+    link: './images/teriberka.JPG'
   },
   {
     name: 'Крым',
-    link: '../images/krim.JPG'
+    link: './images/krim.JPG'
   },
   {
     name: 'Камчатка',
-    link: '../images/kamchatka.JPG'
+    link: './images/kamchatka.JPG'
   }
 ];
 
