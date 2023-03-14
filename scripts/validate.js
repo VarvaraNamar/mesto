@@ -58,7 +58,7 @@ const toggleButtonState = (inputList, buttonElement, config) => {
   }
 }; 
 
-enableValidation({
+  validationConfig=({
     formSelector: '.popup__form',
     inputSelector: '.popup__input',
     saveButtonSelector: '.popup__save-button',
@@ -67,4 +67,4 @@ enableValidation({
     errorClass: 'popup__error_visible'
     });
  
-enableValidation(enableValidation);
+enableValidation(validationConfig);
