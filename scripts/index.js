@@ -1,6 +1,6 @@
 import { initialCards, validationConfig } from './constants.js';
-import { Card } from './card.js';
-import { FormValidator } from './formValidator.js';
+import { Card } from './Card.js';
+import { FormValidator } from './FormValidator.js';
 
 const popupProfile = document.querySelector('.popup_type_profile');// попап профайла
 const popupAddCard = document.querySelector('.popup_type_card');// попап добавления карточки
@@ -42,8 +42,8 @@ function closePopup(popup) {
 };// закрытие попапа 
 
 popupCloseButtonList.forEach((button) => {
+  const popupClosest = button.closest('.popup');
   button.addEventListener('click', function() {
-    const popupClosest = button.closest('.popup_opened');
     closePopup(popupClosest);
   });
 })// закрытие попапов по крестику
@@ -89,7 +89,6 @@ function addCard(evt) {
   });
   closePopup(popupAddCard);
   formAddCard.reset();
-  toggleButtonState();
 }//сабмит формы = добавление карточки 
 
 function zoomImage (cardImage) {
@@ -119,17 +118,17 @@ function renderAddCardPopup() {
 //слушатели
 
 profileEditButton.addEventListener('click', function() { 
-  formProfileValidation.removeErrors();
   openPopup(popupProfile); 
   renderProfilePopup(); 
+  formProfileValidation.removeErrors();
 });//слушатель на кнопку редактирования формы 
 
 formProfile.addEventListener('submit', submitFormProfile);// слушатель на форму, сохранить данные 
 
 cardAddButton.addEventListener('click', function() { 
-  formAddCardValidation.removeErrors();
   openPopup(popupAddCard); 
   renderAddCardPopup()
+  formAddCardValidation.removeErrors();
 });//слушатель на кнопку плюс добавления карточки 
 
 formAddCard.addEventListener('submit', addCard)//слушатель на форму добавления карточки 

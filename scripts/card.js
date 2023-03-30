@@ -20,6 +20,7 @@ class Card {
     this._newCard = this._getTemplate();
     this._newCard.querySelector('.element__title').textContent = this._name; 
     this._newCard.querySelector('.element__image').src = this._link;// картинка в карточке 
+    this._newCard.querySelector('.element__image').alt = this._name;
     this._newCardDeleteButton = this._newCard.querySelector('.element__delete-button');// кнопка удаления карточки
     this._newCardLikeButton = this._newCard.querySelector('.element__like-button');// кнопка лайка 
 
