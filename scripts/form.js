@@ -36,7 +36,7 @@ class FormValidator {
     return this._inputList.some((inputElement) => {
       return !inputElement.validity.valid;
     })
-  }; 
+  }
 
   _disableSaveButton() {
     this._buttonElement.classList.add(this._inactiveButtonClass);
@@ -54,7 +54,7 @@ class FormValidator {
     } else {
       this._enableSaveButton();
     }
-  }; 
+  }
   
   _setEventListeners() {
     this._toggleButtonState();
@@ -77,5 +77,4 @@ class FormValidator {
     this._setEventListeners();
   }
 }
-
 export {FormValidator};
