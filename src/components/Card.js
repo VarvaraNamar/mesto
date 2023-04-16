@@ -1,5 +1,5 @@
-class Card {
-  constructor(data, templateSelector, handleCardClick) {
+export class Card {
+  constructor({data, handleCardClick}, templateSelector) {
       this._name = data.name;
       this._link = data.link;
       this._templateSelector = templateSelector;
@@ -16,16 +16,16 @@ class Card {
   return cardElement;
   }
 
-  createCard() { 
+  renderCard() { 
     this._newCard = this._getTemplate();
     this._newCard.querySelector('.element__title').textContent = this._name; 
     this._newCard.querySelector('.element__image').src = this._link;// картинка в карточке 
     this._newCard.querySelector('.element__image').alt = this._name;
     this._newCardDeleteButton = this._newCard.querySelector('.element__delete-button');// кнопка удаления карточки
     this._newCardLikeButton = this._newCard.querySelector('.element__like-button');// кнопка лайка 
-
+    this._newCardImage = this._newCard.querySelector('.element__image');//картинка карточки
     this._setEventListeners();
-
+    
     return this._newCard
   }//создание карточки из шаблона
 
@@ -37,13 +37,6 @@ class Card {
     this._newCard.remove()
   }//функция удаления карточек 
 
-  _zoomCard() {
-    this._handleCardClick({
-      link: this._link,
-      name: this._name,
-    });
-  }//функция зум
-
   _setEventListeners() {
     this._newCardLikeButton.addEventListener('click', () => {
       this._likeCard();
@@ -51,11 +44,10 @@ class Card {
     this._newCardDeleteButton.addEventListener('click',() => {
       this._deleteCard();
     });
-    this._newCard.addEventListener('click', () => {
-      this._zoomCard();
+    this._newCardImage.addEventListener('click', () => {
+      this._handleCardClick(this._name, this._link);
     });
   };//слушатели
  
 } 
-
-export {Card};
+// 
