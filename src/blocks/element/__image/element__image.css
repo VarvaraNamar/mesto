@@ -2,4 +2,7 @@
   width: 282px;
   height: 282px;
   object-fit: cover;
+  cursor: pointer;
+  color: #fff;
+  background: rgb(0, 0, 0, 90%);
 }

@@ -28,9 +28,7 @@ export class Popup {
   }//закрытие по клику на слое вне попапа
 
   setEventListeners() {
-    this._popupCloseButton.addEventListener('click', () => {
-      this.close();
-    });// закрытие попапов по крестику
+    this._popupCloseButton.addEventListener('click', this.close.bind(this));// закрытие попапов по крестику
     this._popup.addEventListener('click', this._handleOverlayClose.bind(this));//слушатель на оверлей
   }
 }

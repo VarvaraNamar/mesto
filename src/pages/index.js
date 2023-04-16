@@ -34,9 +34,10 @@ function submitFormProfile (data) {
 };//отправка-сохранение формы профайла
 
 profileEditButton.addEventListener("click", () => {
+  const userData = userInfo.getUserInfo()
   popupProfile.open();
-  nameInput.value = userInfo.getUserInfo().name;
-  jobInput.value = userInfo.getUserInfo().job;
+  nameInput.value = userData.name;
+  jobInput.value = userData.job;
   formProfileValidation.removeErrors();
 });//слушатель на кнопку редактирования формы 
 
@@ -74,9 +75,3 @@ const cardsList = new Section({
   },
 }, '.elements');
 cardsList.renderItems();//добавление карточек в разметку
-
-
-
-
-
-
