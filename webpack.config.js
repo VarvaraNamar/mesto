@@ -1,3 +1,4 @@
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -13,8 +14,10 @@ module.exports = {
     publicPath: '',
   },
   mode: 'development',
+  devtool: 'source-map',
   devServer: {
     static: path.resolve(__dirname, './dist'),
+    
     open: true,
     compress: true,
     port: 8080
