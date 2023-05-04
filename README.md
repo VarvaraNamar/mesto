@@ -1,5 +1,5 @@
 # Проект: Место
-Проектная работа 4-8 спринтов
+Проектная работа 4-9 спринтов
 
 [Ссылка на проект на GitHub Pages](https://varvaranamar.github.io/mesto/index.html)
 
@@ -15,6 +15,7 @@
 - 6 спринт: реализована валидация форм, закрытие попапов по клику вне формы и нажатием клавиши Esc.
 - 7 спринт: ООП, рефакторинг кода, модули JS.
 - 8 спринт: рефакторинг кода и сборка вебпаком.
+- 9 спринт: подключение к серверу.
 
 ## **Технологии**
 
@@ -32,7 +33,9 @@
 12. ООП
 13. Модули JS
 14. Webpack
+15. Асинхронность
+16. API
 
 ## **Figma**
 
-[Ссылка на макет в Figma](https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=0%3A1)
+[Ссылка на макет в Figma](https://www.figma.com/file/PSdQFRHoxXJFs2FH8IXViF/JavaScript.-Sprint-9?node-id=0-1&t=aZWOqq6z4vOCCMw1-0)

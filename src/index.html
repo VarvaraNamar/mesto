@@ -55,7 +55,7 @@
       <h2 class="popup__title">Обновить аватар</h2>
       <button class="popup__close-button" aria-label="Закрыть" type="button"></button>
       <form class="popup__form popup__form_type_avatar" name="avatar-form" novalidate>
-        <input class="popup__input popup__input_type_avatar-link" id="avatar-link-input" type="url" name="link" required placeholder="Ссылка на картинку">
+        <input class="popup__input popup__input_type_avatar-link" id="avatar-link-input" type="url" name="avatar" required placeholder="Ссылка на картинку">
         <span class="popup__error avatar-link-input-error">Вы пропустили это поле</span>
         <button class="popup__save-button" type="submit">Сохранить</button>
       </form>
@@ -80,7 +80,7 @@
     <div class="popup__container">
       <h2 class="popup__title">Вы уверены?</h2>
       <button class="popup__close-button" aria-label="Закрыть" type="button"></button>
-      <form class="popup__form" name="popupForm" novalidate>
+      <form class="popup__form popup__form_type_confirm" name="popupForm" novalidate>
         <button class="popup__save-button" type="submit">Да</button>
       </form> 
     </div>

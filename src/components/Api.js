@@ -26,13 +26,13 @@ export class Api {
     return res.json();
   }//загрузка данных карточек
 
-  async editMyProfile(newName, newDescription) {
+  async setUserInfoApi(userData) {
     const res = await fetch(`${this._url}/users/me`, {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        name: newName,
-        about: newDescription
+        name: userData.name,
+        about: userData.about
       })
     });
     if (!res.ok) {
@@ -41,12 +41,12 @@ export class Api {
     return res.json();
   }//редактирование профиля
 
-  async setNewAvatar(data) {
+  async setUserAvatarApi(userData) {
     const res = await fetch(`${this._url}/users/me/avatar`, {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        avatar: data
+        avatar: userData.avatar
       })
     });
     if (!res.ok) {
@@ -55,13 +55,13 @@ export class Api {
     return res.json();
   }//новый аватар
 
-  async addNewCard(newCardName, newCardLink, isUser) {
+  async addNewCard(newData, isUser) {
     const res = await fetch(`${this._url}/cards`, {
       method: 'POST',
       headers: this._headers,
       body: JSON.stringify({
-        name: newCardName,
-        link: newCardLink,
+        name: newData.name,
+        link: newData.link,
         isUser: isUser,
       })
     });
