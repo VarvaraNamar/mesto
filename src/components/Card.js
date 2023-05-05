@@ -35,11 +35,19 @@ export class Card {
     this._newCardCountLikeElement.textContent = data.likes.length;
     this._likes = data.likes
   }
-  _likeCard() {
-    this.isLiked()
-  }
+  
   isLiked(){
     return this._likes.some((item) => item._id === this._userId)
+  }
+
+  _checkUserLike() {
+    this._likes.forEach((item) => {
+      if (item._id === this._userId) {
+        this.setLike()
+      } else {
+        this.removeLike()
+      }
+    })
   }
 
   renderCard() { 
@@ -56,7 +64,7 @@ export class Card {
     this._newCardCountLikeElement = this._newCard.querySelector('.element__like-count');
     this._newCardCountLikeElement.textContent = this._likes.length;
     this._setEventListeners();
-    this._likeCard();
+    this._checkUserLike()
     return this._newCard
   }//создание карточки из шаблона
 

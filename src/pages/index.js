@@ -124,7 +124,7 @@ const popupAddCard = new PopupWithForm('.popup_type_card', newValues => {
       popupAddCard.close();
     })
     .catch(err => console.log(err))
-    .finally(() => popupAddCard.renderLoading(true));
+    .finally(() => popupAddCard.renderLoading(false));
 });
 popupAddCard.setEventListeners(); //элемент попапа-формы добавления карточки
 
